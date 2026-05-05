@@ -8,8 +8,10 @@ dependencies = [
     "langchain>=1.2.17",
     "langchain-community>=0.4.1",
     "langchain-core>=1.3.2",
+    "langchain-experimental>=0.4.1",
     "langgraph>=1.1.10",
     "openai>=2.34.0",
+    "playwright>=1.59.0",
     "pydantic>=2.13.3",
     "python-dotenv>=1.2.2",
 ]

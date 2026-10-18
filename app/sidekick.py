@@ -9,7 +9,10 @@ from langgraph.checkpoint.memory import MemorySaver
 from langchain_core.messages import AIMessage, HumanMessage, SystemMessage
 from typing import List, Any, Optional, Dict
 from pydantic import BaseModel, Field
-from tools.tools import playwright_tools, other_tools
+try:
+    from app.tools.tools import playwright_tools, other_tools
+except (ImportError, ModuleNotFoundError):
+    from tools.tools import playwright_tools, other_tools
 import uuid
 import asyncio
 from datetime import datetime
